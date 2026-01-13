@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration - College Bookstore</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Registration</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="regForm" onsubmit="return validateRegistration()">
+      <label>Name:</label><input type="text" id="name"><br><br>
+      <label>Password:</label><input type="password" id="password"><br><br>
+      <label>Email:</label><input type="text" id="email"><br><br>
+      <label>Phone:</label><input type="text" id="phone"><br><br>
+      <label>Sex:</label>
+      <input type="radio" name="sex" value="Male"> Male
+      <input type="radio" name="sex" value="Female"> Female<br><br>
+      <label>Date of Birth:</label>
+      <select id="dob-day"><option value="">Day</option></select>
+      <select id="dob-month"><option value="">Month</option></select>
+      <select id="dob-year"><option value="">Year</option></select><br><br>
+      <label>Languages:</label>
+      <input type="checkbox" name="lang" value="English"> English
+      <input type="checkbox" name="lang" value="Hindi"> Hindi
+      <input type="checkbox" name="lang" value="Tamil"> Tamil
+      <input type="checkbox" name="lang" value="Telugu"> Telugu<br><br>
+      <label>Address:</label><br>
+      <textarea id="address"></textarea><br><br>
+      <button type="submit">Register</button>
+      <button type="reset">Clear</button>
+    </form>
+  </main>
+</body>
+</html>

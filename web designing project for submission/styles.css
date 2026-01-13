@@ -1,0 +1,171 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(180deg, #f9f9fb, #ececf1);
+  color: #2a2b31;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background: #f0f0f5;
+  color: #2a2b31;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #b08d57;
+}
+
+header h1 {
+  font-family: Georgia, serif;
+  font-size: 1.6rem;
+  color: #a67c52;
+}
+
+header nav a {
+  color: #2a2b31;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 600;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+header nav a:hover {
+  color: #a67c52;
+  border-bottom: 2px solid #a67c52;
+}
+
+/* Layout */
+.container {
+  flex: 1;
+  display: flex;
+}
+
+/* Sidebar */
+aside {
+  width: 220px;
+  background: #f7f7fa;
+  padding: 20px;
+  border-right: 1px solid #dcdce2;
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside ul li {
+  margin: 15px 0;
+}
+
+aside ul li a {
+  color: #a67c52;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+aside ul li a:hover {
+  color: #b08d57;
+}
+
+/* Main content */
+main {
+  flex: 1;
+  padding: 30px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #f9f9fb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #dcdce2;
+}
+
+thead th {
+  background: #ececf1;
+  color: #a67c52;
+  font-family: Georgia, serif;
+}
+
+tbody tr:nth-child(even) {
+  background: #f2f2f7;
+}
+
+tbody tr:hover {
+  background: #e6e6ef;
+}
+
+/* Buttons */
+button {
+  background: #b08d57;
+  color: #ffffff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #d7b47a;
+  transform: translateY(-2px);
+}
+
+/* Forms */
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  background: #f9f9fb;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #dcdce2;
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #a67c52;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #dcdce2;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #2a2b31;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+  outline: none;
+  border-color: #b08d57;
+  box-shadow: 0 0 5px #b08d57;
+}
+
+/* Cart total */
+#grandTotal {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #a67c52;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ECE Catalogue - College Bookstore</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>ECE Books</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="registration.html">Registration</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Electronics & Communication Engineering</h2>
+    <table>
+      <tr><th>Title</th><th>Author</th><th>Publisher</th><th>Price</th><th>Action</th></tr>
+      <tr><td>Digital Electronics</td><td>Ramesh Kumar</td><td>PrincetonHall</td><td>₹450</td><td><button onclick="addToCart('Digital Electronics','ECE',450)">Add</button></td></tr>
+      <tr><td>Signals & Systems</td><td>Amit Gupta</td><td>TechWorld</td><td>₹500</td><td><button onclick="addToCart('Signals & Systems','ECE',500)">Add</button></td></tr>
+      <tr><td>AI Fundamentals</td><td>Sanjay Patel</td><td>PrincetonHall</td><td>₹630</td><td><button onclick="addToCart('AI Fundamentals','ECE',630)">Add</button></td></tr>
+    </table>
+  </main>
+</body>
+</html>

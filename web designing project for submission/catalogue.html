@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Catalogue - College Bookstore</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Catalogue</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="registration.html">Registration</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>All Departments Catalogue</h2>
+    <table>
+      <tr><th>Department</th><th>Title</th><th>Author</th><th>Publisher</th><th>Price</th><th>Action</th></tr>
+      <!-- CSE -->
+      <tr><td>CSE</td><td>HTML Basics</td><td>Rahul Sharma</td><td>TechPress</td><td>₹250</td><td><button onclick="addToCart('HTML Basics','CSE',250)">Add</button></td></tr>
+      <tr><td>CSE</td><td>CSS Design</td><td>Anita Verma</td><td>WebWorks</td><td>₹300</td><td><button onclick="addToCart('CSS Design','CSE',300)">Add</button></td></tr>
+      <tr><td>CSE</td><td>JavaScript Essentials</td><td>Manoj Kumar</td><td>CodeHouse</td><td>₹350</td><td><button onclick="addToCart('JavaScript Essentials','CSE',350)">Add</button></td></tr>
+      <tr><td>CSE</td><td>Java Programming</td><td>Vikram Singh</td><td>BPB Publications</td><td>₹400</td><td><button onclick="addToCart('Java Programming','CSE',400)">Add</button></td></tr>
+      <!-- ECE -->
+      <tr><td>ECE</td><td>Digital Electronics</td><td>Ramesh Kumar</td><td>PrincetonHall</td><td>₹450</td><td><button onclick="addToCart('Digital Electronics','ECE',450)">Add</button></td></tr>
+      <tr><td>ECE</td><td>Signals & Systems</td><td>Amit Gupta</td><td>TechWorld</td><td>₹500</td><td><button onclick="addToCart('Signals & Systems','ECE',500)">Add</button></td></tr>
+      <tr><td>ECE</td><td>AI Fundamentals</td><td>Sanjay Patel</td><td>PrincetonHall</td><td>₹630</td><td><button onclick="addToCart('AI Fundamentals','ECE',630)">Add</button></td></tr>
+      <!-- EEE -->
+      <tr><td>EEE</td><td>Power Systems</td><td>Jyoti Singh</td><td>EnergyPress</td><td>₹550</td><td><button onclick="addToCart('Power Systems','EEE',550)">Add</button></td></tr>
+      <tr><td>EEE</td><td>Control Engineering</td><td>Mehul Patel</td><td>BPB Publications</td><td>₹480</td><td><button onclick="addToCart('Control Engineering','EEE',480)">Add</button></td></tr>
+      <tr><td>EEE</td><td>Java 2</td><td>Vikram Singh</td><td>BPB Publications</td><td>₹355</td><td><button onclick="addToCart('Java 2','EEE',355)">Add</button></td></tr>
+      <!-- CIVIL -->
+      <tr><td>CIVIL</td><td>Structural Analysis</td><td>Kiran Sharma</td><td>SamPublication</td><td>₹600</td><td><button onclick="addToCart('Structural Analysis','CIVIL',600)">Add</button></td></tr>
+      <tr><td>CIVIL</td><td>Concrete Technology</td><td>Raj Mehta</td><td>BuildPress</td><td>₹520</td><td><button onclick="addToCart('Concrete Technology','CIVIL',520)">Add</button></td></tr>
+      <tr><td>CIVIL</td><td>HTML in 24 Hours</td><td>Sunil Peter</td><td>SamPublication</td><td>₹500</td><td><button onclick="addToCart('HTML in 24 Hours','CIVIL',500)">Add</button></td></tr>
+    </table>
+  </main>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSE Catalogue - College Bookstore</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>CSE Books</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="registration.html">Registration</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Computer Science Engineering</h2>
+    <table>
+      <tr><th>Title</th><th>Author</th><th>Publisher</th><th>Price</th><th>Action</th></tr>
+      <tr><td>HTML Basics</td><td>Rahul Sharma</td><td>TechPress</td><td>₹250</td><td><button onclick="addToCart('HTML Basics','CSE',250)">Add</button></td></tr>
+      <tr><td>CSS Design</td><td>Anita Verma</td><td>WebWorks</td><td>₹300</td><td><button onclick="addToCart('CSS Design','CSE',300)">Add</button></td></tr>
+      <tr><td>JavaScript Essentials</td><td>Manoj Kumar</td><td>CodeHouse</td><td>₹350</td><td><button onclick="addToCart('JavaScript Essentials','CSE',350)">Add</button></td></tr>
+      <tr><td>Java Programming</td><td>Vikram Singh</td><td>BPB Publications</td><td>₹400</td><td><button onclick="addToCart('Java Programming','CSE',400)">Add</button></td></tr>
+    </table>
+  </main>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CIVIL Catalogue - College Bookstore</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>CIVIL Books</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="registration.html">Registration</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Civil Engineering</h2>
+    <table>
+      <tr><th>Title</th><th>Author</th><th>Publisher</th><th>Price</th><th>Action</th></tr>
+      <tr><td>Structural Analysis</td><td>Kiran Sharma</td><td>SamPublication</td><td>₹600</td><td><button onclick="addToCart('Structural Analysis','CIVIL',600)">Add</button></td></tr>
+      <tr><td>Concrete Technology</td><td>Raj Mehta</td><td>BuildPress</td><td>₹520</td><td><button onclick="addToCart('Concrete Technology','CIVIL',520)">Add</button></td></tr>
+      <tr><td>HTML in 24 Hours</td><td>Sunil Peter</td><td>SamPublication</td><td>₹500</td><td><button onclick="addToCart('HTML in 24 Hours','CIVIL',500)">Add</button></td></tr>
+    </table>
+  </main>
+</body>
+</html>

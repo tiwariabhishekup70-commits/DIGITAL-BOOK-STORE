@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EEE Catalogue - College Bookstore</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>EEE Books</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="registration.html">Registration</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Electrical & Electronics Engineering</h2>
+    <table>
+      <tr><th>Title</th><th>Author</th><th>Publisher</th><th>Price</th><th>Action</th></tr>
+      <tr><td>Power Systems</td><td>Jyoti Singh</td><td>EnergyPress</td><td>₹550</td><td><button onclick="addToCart('Power Systems','EEE',550)">Add</button></td></tr>
+      <tr><td>Control Engineering</td><td>Mehul Patel</td><td>BPB Publications</td><td>₹480</td><td><button onclick="addToCart('Control Engineering','EEE',480)">Add</button></td></tr>
+      <tr><td>Java 2</td><td>Vikram Singh</td><td>BPB Publications</td><td>₹355</td><td><button onclick="addToCart('Java 2','EEE',355)">Add</button></td></tr>
+    </table>
+  </main>
+</body>
+</html>
